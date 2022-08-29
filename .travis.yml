@@ -4,7 +4,7 @@ services:
   - docker
 
 before_install:
-  - docker build -t Yair-lahad/docker-react -f Dockerfile.dev .
+  - docker build -t yairlahad/docker-react -f Dockerfile.dev .
 
 script:
-  - docker run -e CI=true Yair-lahad/docker-react npm run test
+  - docker run -e CI=true yairlahad/docker-react npm run test
